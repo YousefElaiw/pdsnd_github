@@ -180,7 +180,7 @@ def user_stats(df, city):
     print('-'*40)
 
     print('-'*40)
-    
+
     #view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     #start_loc = 0
     #start_loc += 5
@@ -188,16 +188,16 @@ def user_stats(df, city):
         #print(df.iloc[:6])
         #if view_data == 'no':
             #break
-            
+
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
     while view_data == 'yes':
         print(df.iloc[:6])
         start_loc += 5
-        view_data = input("Do you wish to continue?: ").lower()
-    
+        view_data = input("Do you wish to continue?: type yes or no").lower()
+
         print('-'*40)
-    
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -208,13 +208,13 @@ def main():
         trip_duration_stats(df)
         user_stats(df, city)
 
-        
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             print("\nThank you!\n")
             break
 
-            
-            
+
+
 if __name__ == "__main__":
 	main()
