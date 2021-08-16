@@ -17,3 +17,6 @@ new_york_city.csv
 
 ### Credits
 https://github.com/YousefElaiw/pdsnd_github.git
+
+## For more details
+yousef.elaiw@hotmail.com
